@@ -1,0 +1,212 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Jared Skinner} \\ \vspace{5pt}
+    \small Minneapolis, MN $|$ 612-401-8341 $|$ \href{mailto:jaredds66@gmail.com}{\underline{jaredds66@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/jaredskinner}{\underline{linkedin.com/in/jaredskinner/}} $|$
+    \href{https://github.com/jared-skinner}{\underline{https://github.com/jared-skinner}}
+
+	\vspace{10pt}
+    
+    Jared Skinner is a C++ and Python software engineer with eight years of experience.
+\end{center}
+
+%-----------PROJECTS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Python, R, SQL, JavaScript, Bash} \\
+     \textbf{Technologies}{: Pandas, NumPy, Flask, Django, Boost, Bootstrap} \\
+     \textbf{Tools}{: Vim, Visual Studio, VS Code, Linux, Git, SVN, Make} \\
+     
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Actuarial Analyst}{Jun. 2018 -- Present}
+      {Allianz Life}{Golden Valley, MN}
+      \resumeItemListStart
+      	% C++, C++ leadership
+		\resumeItem{Decreased model runtime by \textbf{40\%} by refactoring the model codebase \textbf{(C++)}}
+		\resumeItem{Reduced model delivery time by \textbf{50\%} through automated processes \textbf{(Python, Jenkins, SVN, Git)}}
+		\resumeItem{Used test-driven development to create a library for managing date logic in actuarial models \textbf{(C++)}}
+		%\resumeItem{Reduced model validation runtime from \textbf{8 hours} to \textbf{5 minutes} by optimizing the codebase \textbf{(Python, SQL)}}
+		\resumeItem{Created a tool, enabling the department to run models on workstations \textbf{(Python, JavaScript, Django, SQL)}}
+		\resumeItem{Built a chat application, allowing the modeling team to communicate early in the COVID shutdown \textbf{(Python, SQL)}}
+		% \resumeItem{Led the creation of a triage process for the actuarial department's largest application}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Power Systems Developer}{Apr. 2015 -- Jun. 2018}
+      {Open Systems International}{Medina, MN}
+      \resumeItemListStart
+      	\resumeItem{Designed and led the development of a product that monitors voltage levels across an electrical grid \textbf{(C)}}
+      	\resumeItem{Designed and developed a feature to automate control of voltage levels across an electrical grid \textbf{(C)}}
+		\resumeItem{Built pipeline scripts to automate building, testing and deploying \textbf{(Python, C, Jenkins, SVN)}}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Sep. 2013 -- Apr. 2015}
+      {VidGrid}{St. Paul, MN}
+      \resumeItemListStart
+		\resumeItem{Developed algorithms for image recognition \textbf{(C++, OpenCV)}}
+	     \resumeItem{Built a web application from the ground up \textbf{(PHP, HTML/CSS, JavaScript, Stripe)}}
+		\resumeItem{Drafted version control procedures \textbf{(Git)}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Jul. 2013 -- Nov. 2014}
+      {Advantage Management Corporation}{Eagan, MN}
+      \resumeItemListStart
+		\resumeItem{Built client-server applications \textbf{(Powerbuilder and SQL)}}
+		\resumeItem{Debugged code and solved long-standing issues}
+		\resumeItem{Wrote SQL statements for recurring reports}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+ 	\resumeProjectHeading         
+          {\textbf{Machine Learning Algorithms} $|$ \emph{Python}}{}
+          \resumeItemListStart
+            \resumeItem{Implemented common machine learning algorithms while doing a study of neural networks}
+          \resumeItemListEnd
+          
+         \resumeProjectHeading         
+          {\textbf{Causality} $|$ \emph{Python}}{}
+          \resumeItemListStart
+            \resumeItem{Built a framework for helping students to understand the actuarial modeling process}
+          \resumeItemListEnd
+          
+          
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education and Credentials}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {American Academy of Actuaries}{Nov. 2020}
+      {Member of the American Academy of Actuaries}{}
+      \resumeSubheading
+      {Society of Actuaries}{Oct. 2020}
+      {Associate in the Society of Actuaries}{}
+    \resumeSubheading
+      {University of Wyoming}{Sep. 2011 -- May 2013}
+      {Master of Science in Mathematics}{Laramie, WY}
+    \resumeSubheading
+      {University of St. Thomas}{Sep. 2008 -- May 2011}
+      {Bachelor of Arts in Mathematics}{St. Paul, MN}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
